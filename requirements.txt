@@ -1,6 +1,6 @@
 numpy
 streamlit
-scipy>=1.5,<1.11
+scipy==1.10.0
 pandas
 matplotlib
 plotly
