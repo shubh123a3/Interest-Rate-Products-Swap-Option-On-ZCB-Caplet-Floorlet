@@ -4,3 +4,4 @@ scipy
 pandas
 matplotlib
 plotly
+seaborn
