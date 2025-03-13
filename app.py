@@ -121,7 +121,7 @@ def HW_Mu_FrwdMeasure(P0T, lambd, eta, T):
     theta_hat = lambda t, T: theta(t) + eta * eta / lambd * 1.0 / lambd * (np.exp(-lambd * (T - t)) - 1.0)
     temp = lambda z: theta_hat(z, T) * np.exp(-lambd * (T - z))
 
-    r_mean = r0 * np.exp(-lambd * T) + lambd * integrate.trapz(temp(zGrid), zGrid)
+    r_mean = r0 * np.exp(-lambd * T) + lambd * np.trapz(temp(zGrid), zGrid)
 
     return r_mean
 
